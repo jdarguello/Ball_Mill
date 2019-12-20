@@ -1,0 +1,96 @@
+\usepackage[latin1]{inputenc}  % Para los caracteres tildados
+%\usepackage[utf8]{inputenc}   % Para los caracteres tildados
+%If your LaTeX compiler complains about utf8, try utf8x instead.
+\usepackage[spanish]{babel}
+
+\usepackage{amsmath,amsfonts}  % Fonts y macros de la American Math Society
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{geometry}          % margenes de la manera facil
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{times}
+\usepackage{color}
+%\usepackage[sc]{mathpazo}
+\usepackage{url}
+\usepackage{fancyhdr}          % Fancy Header and Footer
+\usepackage[ruled]{algorithm}       
+\usepackage{algorithmic}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{abstract}
+\usepackage{multicol}
+\usepackage{titling}
+\usepackage{titlesec}
+\parindent=0pt
+
+%\usepackage{setspace}          %para manejar single & double space
+\usepackage{subfigure}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+%      PLEASE DO NOT MODIFY
+%      POR FAVOR NO CAMBIAR
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+% Define the margins
+
+\geometry{verbose, top=1.78cm,bottom=1.78cm, left=2cm, right=1.65cm}
+\headheight=.76cm
+\headsep=0pt
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ % For use with PDFLaTeX
+  \usepackage[pdftex]{graphicx} 
+  \pdfcompresslevel=9 
+  \usepackage[pdftex,bookmarksopen,colorlinks,linkcolor=blue,%
+              citecolor=blue, urlcolor=blue]{hyperref} 
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%   DEFINITIONS
+
+
+
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bbf}{\mathbf{f}}
+
+\AtBeginDocument{\renewcommand{\abstractname}{}}
+
+\def\Real{\mathbb{R}}%
+\DeclareMathOperator{\volume}{volume}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%     SECTION FORMAT
+\mathindent=10pt
+\makeatletter
+\abovecaptionskip=4pt
+\renewcommand{\section}{\@startsection%
+   {section}%
+   {1}%
+   {\z@}%
+   {-\baselineskip}%
+   {0.2\baselineskip}%
+   {\bfseries\boldmath\MakeUppercase}}
+\def\subsection{\@startsection%
+   {subsection}%
+   {2}%
+   {\z@}%
+   {-\baselineskip}%
+   {0.2\baselineskip}%
+   {\noindent\normalsize\boldmath\emph}}
+\def\subsubsection{\@startsection{subsubsection}
+   {3}
+   {\z@}%
+   {-13dd plus-4pt minus-4pt}
+   {-5.5pt}
+   {\normalsize\emph}}
+
+\renewcommand\paragraph{\@startsection{paragraph}{3}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+            {1.25ex \@plus .25ex}%
+            {\normalfont\normalsize\bfseries}}
+
+\makeatother
+\setcounter{secnumdepth}{3} % how many sectioning levels to assign numbers to
+\setcounter{tocdepth}{3}    % how many sectioning levels to show in ToC

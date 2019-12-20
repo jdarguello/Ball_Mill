@@ -1,0 +1,83 @@
+\documentclass[11pt,letterpaper,fleqn]{article}
+% Inclusion de los paquetes necesarios
+
+\include{Fijo/Parameter}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{document}
+
+\noindent\rule{18cm}{0.4pt}
+
+\noindent
+{\LARGE {\textbf{An automation approach of the mechanical design and manufacturing of ball mills}}}
+\vspace{.5em}
+
+\noindent 
+\large{\textbf{{Juan D. Arguello$^{a*}$, Omar A. G\'elvez$^b$, Jairo R. Mart\'inez$^c$, Diego C. Dur\'an$^c$, Elena E. Stashenko$^c$}}}
+\vspace{.3em}
+
+\noindent	
+{\small {\emph{$^a$Universidad Industrial de Santander, Escuela de Ingeniería Mecánica, Centro Nacional de Investigaciones para la Agroindustrialización de Especies Vegetales Aromáticas y Medicinales Tropicales - CENIVAM. Bucaramanga, Colombia.}}}
+
+\noindent	
+{\small {\emph{$^b$Universidad Industrial de Santander, Escuela de Ingeniería Mecánica, Grupo de Investigación en Energía y Medio Ambiente - GIEMA. Bucaramanga, Colombia.}}}
+
+\noindent	
+{\small {\emph{$^c$Universidad Industrial de Santander, Escuela de Química, Centro de Investigación en Biomoléculas - CIBIMOL y Centro Nacional de Investigaciones para la Agroindustrialización de Especies Vegetales Aromáticas y Medicinales Tropicales - CENIVAM. Bucaramanga, Colombia.}}}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% The Title -- Titulo     
+%  START HERE
+%  COMIENCE ACA
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% The Abstract  --  Resumen
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\noindent\rule{18cm}{0.4pt}
+
+\vspace*{-3.15 em}
+
+\begin{abstract}
+
+\begin{abstractname}
+
+\centering
+
+\large{\textbf{Abstract}}
+
+\end{abstractname}
+
+\vspace{1 em}
+
+
+   {\small{%
+  
+Engineering design is taking a new step forward with technological advances. \textit{Open source} tools, such as Python, make it possible to develop calculation and validation algorithms to automate design procedures. Ball mills stands out as a solution for crushing processes, specially in the civil industry, which its design procedure requires the study of the cynematic of the balls and the dynamical interaction between them and the mill. Numerical simulations are usually used as a validation tool, but also as an optimization one. For this particular case, there were used two numerical methods: the \textit{Discrete Element Method} (DEM), used to validate the cynematic theoretical study, optimize it and to predict the impact distribution energy over the mill; and the \textit{Finite Element Method} (FEM), which was used to predict, and guarantee, an adecuate structural behaviour of the mill. The present work also create automatic engineering reports (both in TeX and PDF formats), CAD drawings of the designed ball mill (dxf format) and an automatic quantification of the required materials for manufacturing. All of the above can be summarized in three principal stages, or chapters: the first one is related to the theoretical study, the second one to the numerical simulations and the last one to the obtained results.
+   }} 
+   
+   \vspace{.5 em}
+
+\textit{Keywords:}  {\small{ball mill, automation, mechanical design, FEM, DEM, FEniCS, Python.
+}}
+
+
+\end{abstract}
+
+\vspace{-1em}
+
+\noindent\rule{18cm}{0.4pt}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\renewcommand{\arraystretch}{1.3}
+
+\begin{multicols}{2}
+
+\input{Fijo/Introduction}
+
+\input{Fijo/Teoria}
+
+\end{multicols}
+
+\end{document}
